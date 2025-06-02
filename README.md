@@ -107,36 +107,45 @@ ComuAcesso/
 └── tsconfig.json              # Configurações do TypeScript
 ```
 
-📂 Fluxo de Organização
-1. Módulos Funcionais (app/)
-📢 Avisos (avisos/)
-index.tsx - Lista todos os avisos da comunidade
-[id].tsx - Exibe detalhes de um aviso específico
-novo.tsx - Formulário para criar novos avisos
-📦 Encomendas (encomendas/)
-index.tsx - Lista todas as encomendas
-[id].tsx - Detalhes e rastreamento de encomenda
-nova.tsx - Cadastro de nova encomenda
-👥 Moradores (moradores/)
-_layout.tsx - Layout compartilhado das telas
-index.tsx - Gestão de moradores cadastrados
-estatisticas.tsx - Dashboard com métricas
-2. Código Fonte (app/src/)
-components/ - Componentes reutilizáveis (botões, cards, modais)
-database/ - Configuração Firebase e operações de banco
-model/ - Interfaces e classes de entidades (Morador, Encomenda, Aviso)
-types/ - Definições de tipos TypeScript
-utils/ - Funções auxiliares (validações, formatações, helpers)
-3. Recursos e Configurações
-assets/ - Imagens, ícones e fontes
-constants/ - Cores e valores fixos
-styles/ - Estilos globais da aplicação
-4. Arquivos de Configuração (raiz)
-app.json - Configurações do Expo
-tsconfig.json - Configurações do TypeScript
-package.json - Dependências e scripts
+## 📂 Fluxo de Organização
 
-🔧 Comandos Úteis
+### **1. Módulos Funcionais** (`app/`)
+
+#### **📢 Avisos** (`avisos/`)
+- **`index.tsx`** - Lista todos os avisos da comunidade
+- **`[id].tsx`** - Exibe detalhes de um aviso específico
+- **`novo.tsx`** - Formulário para criar novos avisos
+
+#### **📦 Encomendas** (`encomendas/`)
+- **`index.tsx`** - Lista todas as encomendas
+- **`[id].tsx`** - Detalhes e rastreamento de encomenda
+- **`nova.tsx`** - Cadastro de nova encomenda
+
+#### **👥 Moradores** (`moradores/`)
+- **`_layout.tsx`** - Layout compartilhado das telas
+- **`index.tsx`** - Gestão de moradores cadastrados
+- **`estatisticas.tsx`** - Dashboard com métricas
+
+### **2. Código Fonte** (`app/src/`)
+- **`components/`** - Componentes reutilizáveis (botões, cards, modais)
+- **`database/`** - Configuração Firebase e operações de banco
+- **`model/`** - Interfaces e classes de entidades (Morador, Encomenda, Aviso)
+- **`types/`** - Definições de tipos TypeScript
+- **`utils/`** - Funções auxiliares (validações, formatações, helpers)
+
+### **3. Recursos e Configurações**
+- **`assets/`** - Imagens, ícones e fontes
+- **`constants/`** - Cores e valores fixos
+- **`styles/`** - Estilos globais da aplicação
+
+### **4. Arquivos de Configuração** (raiz)
+- **`app.json`** - Configurações do Expo
+- **`tsconfig.json`** - Configurações do TypeScript
+- **`package.json`** - Dependências e scripts
+
+## 🔧 Comandos Úteis
+
+```bash
 # Instalar dependências
 npm install
 
@@ -151,20 +160,31 @@ npx expo doctor
 
 # Reinstalar dependências (se necessário)
 rm -rf node_modules && npm install
-🎨 Design System
-O aplicativo segue princípios de Design Inclusivo, com:
 
-Cores de alto contraste para melhor legibilidade
-Fontes grandes e claras
-Ícones intuitivos e universais
-Interface simplificada e objetiva
-📊 Compatibilidade
-Plataforma	Versão Mínima	Status
-Android	API 21 (Android 5.0)	✅ Suportado
-iOS	iOS 12.0	✅ Suportado
-Node.js	16.x	✅ Requerido
-🚨 Solução de Problemas
-Erro de permissão (macOS/Linux):
+# Verificar tipos TypeScript
+npx tsc --noEmit
+
+## 🎨 Design System
+
+O aplicativo segue princípios de **Design Inclusivo**, com:
+
+- Cores de alto contraste para melhor legibilidade
+- Fontes grandes e claras
+- Ícones intuitivos e universais
+- Interface simplificada e objetiva
+
+## 📊 Compatibilidade
+
+| **Plataforma** | **Versão Mínima** | **Status** |
+|----------------|-------------------|------------|
+| **Android** | API 21 (Android 5.0) | ✅ Suportado |
+| **iOS** | iOS 12.0 | ✅ Suportado |
+| **Node.js** | 16.x | ✅ Requerido |
+
+## 🚨 Solução de Problemas
+
+### **Erro de permissão (macOS/Linux):**
+```bash
 sudo chown -R $(whoami) ~/.npm
 App não carrega no dispositivo:
 Verifique se o dispositivo está na mesma rede Wi-Fi
