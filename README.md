@@ -1,6 +1,4 @@
-# ComuAcesso
-App React Native cross-platform para otimizar entregas de encomendas na Favela da Kelson's. Conecta moradores e associação com notificações, cadastro simplificado e QR Code. Solução acadêmica com impacto social real em Android e iOS.
-
+```markdown
 # 📱 ComuAcesso
 
 > **Conectando comunidades através da tecnologia**
@@ -34,42 +32,67 @@ O **ComuAcesso** é uma solução tecnológica que resolve problemas reais de lo
 Antes de começar, certifique-se de ter instalado:
 
 ### **Requisitos Essenciais:**
+
 - **[Node.js](https://nodejs.org/)** (versão 16 ou superior - recomendado LTS)
 - **npm** (vem com Node.js) ou **[yarn](https://yarnpkg.com/)**
 - **[Expo CLI](https://docs.expo.dev/get-started/installation/)**
 
 ### **Verificar instalações:**
+
 ```bash
 node --version
 npm --version
-Instalar Expo CLI:
+# Instalar Expo CLI:
 npm install -g @expo/cli
-Para testar no dispositivo móvel:
-Android: Baixe o Expo Go na Google Play Store
-iOS: Baixe o Expo Go na Apple App Store
-🛠️ Instalação e Execução
-1. Clone o repositório
-git clone https://github.com/seu-usuario/ComuAcesso.git
-cd ComuAcesso
-2. Instale as dependências
-npm install
-3. Inicie o projeto
-npx expo start
-4. Execute no dispositivo
-Após executar npx expo start, você verá um QR Code no terminal:
+```
 
-📱 Android: Abra o app Expo Go e escaneie o QR Code
-🍎 iOS: Use a câmera nativa do iPhone para escanear o QR Code
-💻 Emulador: Pressione a para Android ou i para iOS no terminal
-📱 Como Testar
-Opção 1: Dispositivo Físico (Recomendado)
-Baixe o Expo Go na sua loja de aplicativos
-Execute npx expo start no terminal
-Escaneie o QR Code exibido
-O aplicativo será carregado automaticamente
-Opção 2: Emulador/Simulador
-Android: Instale Android Studio e configure um AVD
-iOS: Instale Xcode (apenas macOS) e use o iOS Simulator
+Para testar no dispositivo móvel:
+
+- **Android**: Baixe o Expo Go na Google Play Store
+- **iOS**: Baixe o Expo Go na Apple App Store
+
+## 🛠️ Instalação e Execução
+
+1. Clone o repositório
+
+   ```bash
+   git clone https://github.com/seu-usuario/ComuAcesso.git
+   cd ComuAcesso
+   ```
+
+2. Instale as dependências
+
+   ```bash
+   npm install
+   ```
+
+3. Inicie o projeto
+
+   ```bash
+   npx expo start
+   ```
+
+4. Execute no dispositivo
+
+   Após executar `npx expo start`, você verá um QR Code no terminal:
+
+   - 📱 **Android**: Abra o app Expo Go e escaneie o QR Code
+   - 🍎 **iOS**: Use a câmera nativa do iPhone para escanear o QR Code
+   - 💻 **Emulador**: Pressione `a` para Android ou `i` para iOS no terminal
+
+## 📱 Como Testar
+
+### Opção 1: Dispositivo Físico (Recomendado)
+
+- Baixe o Expo Go na sua loja de aplicativos
+- Execute `npx expo start` no terminal
+- Escaneie o QR Code exibido
+- O aplicativo será carregado automaticamente
+
+### Opção 2: Emulador/Simulador
+
+- **Android**: Instale Android Studio e configure um AVD
+- **iOS**: Instale Xcode (apenas macOS) e use o iOS Simulator
 
 ## 🏗️ Estrutura do Projeto
 
@@ -119,21 +142,25 @@ ComuAcesso/
 ### **1. Módulos Funcionais** (`app/`)
 
 #### **📢 Avisos** (`avisos/`)
+
 - **`index.tsx`** - Lista todos os avisos da comunidade
 - **`[id].tsx`** - Exibe detalhes de um aviso específico
 - **`novo.tsx`** - Formulário para criar novos avisos
 
 #### **📦 Encomendas** (`encomendas/`)
+
 - **`index.tsx`** - Lista todas as encomendas
 - **`[id].tsx`** - Detalhes e rastreamento de encomenda
 - **`nova.tsx`** - Cadastro de nova encomenda
 
 #### **👥 Moradores** (`moradores/`)
+
 - **`_layout.tsx`** - Layout compartilhado das telas
 - **`index.tsx`** - Gestão de moradores cadastrados
 - **`estatisticas.tsx`** - Dashboard com métricas
 
 ### **2. Código Fonte** (`app/src/`)
+
 - **`components/`** - Componentes reutilizáveis (botões, cards, modais)
 - **`database/`** - Configuração Firebase e operações de banco
 - **`model/`** - Interfaces e classes de entidades (Morador, Encomenda, Aviso)
@@ -141,11 +168,13 @@ ComuAcesso/
 - **`utils/`** - Funções auxiliares (validações, formatações, helpers)
 
 ### **3. Recursos e Configurações**
+
 - **`assets/`** - Imagens, ícones e fontes
 - **`constants/`** - Cores e valores fixos
 - **`styles/`** - Estilos globais da aplicação
 
 ### **4. Arquivos de Configuração** (raiz)
+
 - **`app.json`** - Configurações do Expo
 - **`tsconfig.json`** - Configurações do TypeScript
 - **`package.json`** - Dependências e scripts
@@ -170,6 +199,7 @@ rm -rf node_modules && npm install
 
 # Verificar tipos TypeScript
 npx tsc --noEmit
+```
 
 ## 🎨 Design System
 
@@ -182,44 +212,61 @@ O aplicativo segue princípios de **Design Inclusivo**, com:
 
 ## 📊 Compatibilidade
 
-| **Plataforma** | **Versão Mínima** | **Status** |
-|----------------|-------------------|------------|
-| **Android** | API 21 (Android 5.0) | ✅ Suportado |
-| **iOS** | iOS 12.0 | ✅ Suportado |
-| **Node.js** | 16.x | ✅ Requerido |
+| **Plataforma** | **Versão Mínima** | **Status**     |
+|----------------|-------------------|----------------|
+| **Android**    | API 21 (Android 5.0) | ✅ Suportado  |
+| **iOS**        | iOS 12.0          | ✅ Suportado    |
+| **Node.js**    | 16.x              | ✅ Requerido     |
 
 ## 🚨 Solução de Problemas
 
 ### **Erro de permissão (macOS/Linux):**
+
 ```bash
 sudo chown -R $(whoami) ~/.npm
-App não carrega no dispositivo:
-Verifique se o dispositivo está na mesma rede Wi-Fi
-Tente executar npx expo start --tunnel
-Reinicie o Expo Go e escaneie novamente
-Erro de dependências:
+```
+
+### **App não carrega no dispositivo:**
+
+- Verifique se o dispositivo está na mesma rede Wi-Fi
+- Tente executar `npx expo start --tunnel`
+- Reinicie o Expo Go e escaneie novamente
+
+### **Erro de dependências:**
+
+```bash
 rm -rf node_modules
 rm package-lock.json
 npm install
-🤝 Contribuindo
+```
+
+## 🤝 Contribuindo
+
 Este é um projeto acadêmico com impacto social. Contribuições são bem-vindas!
 
-Faça um fork do projeto
-Crie uma branch para sua feature (git checkout -b feature/AmazingFeature)
-Commit suas mudanças (git commit -m 'Add some AmazingFeature')
-Push para a branch (git push origin feature/AmazingFeature)
-Abra um Pull Request
-📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo 4 para mais detalhes.
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
-👥 Equipe
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+## 👥 Equipe
+
 Desenvolvido por estudantes comprometidos com tecnologia social e inclusão digital.
 
-📞 Contato
+## 📞 Contato
+
 Para dúvidas, sugestões ou parcerias: +55 21 99125-8635
 
-📧 Email: eliesio.jtl@gmail.com
-💬 Issues: 5
-ComuAcesso - Transformando comunidades através da tecnologia 🚀
+📧 **Email**: eliesio.jtl@gmail.com
 
-💡 Dica: Este projeto utiliza Expo para desenvolvimento mais ágil e teste simplificado em dispositivos reais!
+💬 **Issues**: [GitHub Issues](https://github.com/seu-usuario/ComuAcesso/issues)
+
+## 💡 Dica
+
+Este projeto utiliza Expo para desenvolvimento mais ágil e teste simplificado em dispositivos reais!
+```
