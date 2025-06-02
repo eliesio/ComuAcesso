@@ -64,38 +64,48 @@ Opção 2: Emulador/Simulador
 Android: Instale Android Studio e configure um AVD
 iOS: Instale Xcode (apenas macOS) e use o iOS Simulator
 
-🏗️ Estrutura do Projeto
+## 🏗️ Estrutura do Projeto
+
+```
 ComuAcesso/
 ├── app/
-│   ├── avisos/             # Módulo de avisos e notificações
-│   │   ├── [id].tsx        # Tela de detalhes do aviso específico
-│   │   ├── index.tsx       # Lista de avisos
-│   │   └── novo.tsx        # Criar novo aviso
-│   ├── encomendas/         # Módulo de gestão de encomendas
-│   │   ├── [id].tsx        # Detalhes da encomenda específica
-│   │   ├── index.tsx       # Lista de encomendas
-│   │   └── nova.tsx        # Cadastrar nova encomenda
-│   ├── moradores/          # Módulo de gestão de moradores
-│   │   ├── _layout.tsx     # Layout das telas de moradores
-│   │   ├── estatisticas.tsx # Estatísticas dos moradores
-│   │   └── index.tsx       # Lista/cadastro de moradores
-│   ├── assets/             # Recursos estáticos
-│   │   ├── images/         # Imagens e ícones
-│   │   └── fonts/          # Fontes customizadas
-│   ├── constants/          # Constantes da aplicação
-│   │   └── Colors.ts       # Paleta de cores
-│   ├── src/                # Código fonte principal
-│   │   ├── components/     # Componentes compartilhados
-│   │   ├── database/       # Configuração e conexão com banco
-│   │   ├── model/          # Modelos de dados e entidades
-│   │   ├── types/          # Definições de tipos TypeScript
-│   │   └── utils/          # Funções utilitárias
-│   └── styles/             # Estilos da aplicação
-├── .gitignore              # Arquivos ignorados pelo Git
-├── app.json                # Configurações do Expo
-├── package-lock.json       # Lock de dependências
-├── package.json            # Dependências e scripts
-└── tsconfig.json           # Configurações do TypeScript
+│   ├── avisos/                 # Módulo de avisos e notificações
+│   │   ├── [id].tsx           # Tela de detalhes do aviso específico
+│   │   ├── index.tsx          # Lista de avisos
+│   │   └── novo.tsx           # Criar novo aviso
+│   │
+│   ├── encomendas/            # Módulo de gestão de encomendas
+│   │   ├── [id].tsx           # Detalhes da encomenda específica
+│   │   ├── index.tsx          # Lista de encomendas
+│   │   └── nova.tsx           # Cadastrar nova encomenda
+│   │
+│   ├── moradores/             # Módulo de gestão de moradores
+│   │   ├── _layout.tsx        # Layout das telas de moradores
+│   │   ├── estatisticas.tsx   # Estatísticas dos moradores
+│   │   └── index.tsx          # Lista/cadastro de moradores
+│   │
+│   ├── assets/                # Recursos estáticos
+│   │   ├── images/            # Imagens e ícones
+│   │   └── fonts/             # Fontes customizadas
+│   │
+│   ├── constants/             # Constantes da aplicação
+│   │   └── Colors.ts          # Paleta de cores
+│   │
+│   ├── src/                   # Código fonte principal
+│   │   ├── components/        # Componentes compartilhados
+│   │   ├── database/          # Configuração e conexão com banco
+│   │   ├── model/             # Modelos de dados e entidades
+│   │   ├── types/             # Definições de tipos TypeScript
+│   │   └── utils/             # Funções utilitárias
+│   │
+│   └── styles/                # Estilos da aplicação
+│
+├── .gitignore                 # Arquivos ignorados pelo Git
+├── app.json                   # Configurações do Expo
+├── package-lock.json          # Lock de dependências
+├── package.json               # Dependências e scripts
+└── tsconfig.json              # Configurações do TypeScript
+```
 
 📂 Fluxo de Organização
 1. Módulos Funcionais (app/)
