@@ -211,7 +211,7 @@ Desenvolvido por estudantes comprometidos com tecnologia social e inclusão digi
 📞 Contato
 Para dúvidas, sugestões ou parcerias: +55 21 99125-8635
 
-📧 Email: [eliesio.jtl@gmail.com]
+📧 Email: eliesio.jtl@gmail.com
 💬 Issues: 5
 ComuAcesso - Transformando comunidades através da tecnologia 🚀
 
