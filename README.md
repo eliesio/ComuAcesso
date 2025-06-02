@@ -1,38 +1,45 @@
 # ComuAcesso
 App React Native cross-platform para otimizar entregas de encomendas na Favela da Kelson's. Conecta moradores e associação com notificações, cadastro simplificado e QR Code. Solução acadêmica com impacto social real em Android e iOS.
 
+# 📱 ComuAcesso
 
-📱 ComuAcesso
-Conectando comunidades através da tecnologia
+> **Conectando comunidades através da tecnologia**
 
 Um aplicativo mobile cross-platform que revoluciona o sistema de entrega de encomendas em comunidades, desenvolvido especificamente para a Favela da Kelson's.
 
-🎯 Sobre o Projeto
-O ComuAcesso é uma solução tecnológica que resolve problemas reais de logística de entregas em comunidades urbanas. Desenvolvido com React Native, o aplicativo funciona tanto em dispositivos Android quanto iOS, maximizando o alcance e a inclusão digital.
+## 🎯 Sobre o Projeto
 
-✨ Principais Funcionalidades
-📦 Cadastro Simplificado de moradores e encomendas
-🔔 Notificações Inteligentes para avisos de entrega
-📱 QR Code para confirmação segura de retiradas
-🌐 Modo Offline para áreas com conectividade limitada
-👥 Interface Intuitiva adaptada para diferentes níveis de letramento digital
-🔄 Sincronização em Tempo Real via Firebase
-🚀 Tecnologias Utilizadas
-React Native - Framework cross-platform
-Expo - Plataforma de desenvolvimento
-Firebase - Backend e autenticação
-JavaScript/TypeScript - Linguagem de programação
-React Navigation - Navegação entre telas
-AsyncStorage - Armazenamento local
+O **ComuAcesso** é uma solução tecnológica que resolve problemas reais de logística de entregas em comunidades urbanas. Desenvolvido com **React Native**, o aplicativo funciona tanto em dispositivos **Android quanto iOS**, maximizando o alcance e a inclusão digital.
 
-📋 Pré-requisitos
+## ✨ Principais Funcionalidades
+
+- 📦 **Cadastro Simplificado** de moradores e encomendas
+- 🔔 **Notificações Inteligentes** para avisos de entrega
+- 📱 **QR Code** para confirmação segura de retiradas
+- 🌐 **Modo Offline** para áreas com conectividade limitada
+- 👥 **Interface Intuitiva** adaptada para diferentes níveis de letramento digital
+- 🔄 **Sincronização em Tempo Real** via Firebase
+
+## 🚀 Tecnologias Utilizadas
+
+- **React Native** - Framework cross-platform
+- **Expo** - Plataforma de desenvolvimento
+- **Firebase** - Backend e autenticação
+- **JavaScript/TypeScript** - Linguagem de programação
+- **React Navigation** - Navegação entre telas
+- **AsyncStorage** - Armazenamento local
+
+## 📋 Pré-requisitos
+
 Antes de começar, certifique-se de ter instalado:
 
-Requisitos Essenciais:
-1 (versão 16 ou superior - recomendado LTS)
-npm (vem com Node.js) ou 2
-3
-Verificar instalações:
+### **Requisitos Essenciais:**
+- **[Node.js](https://nodejs.org/)** (versão 16 ou superior - recomendado LTS)
+- **npm** (vem com Node.js) ou **[yarn](https://yarnpkg.com/)**
+- **[Expo CLI](https://docs.expo.dev/get-started/installation/)**
+
+### **Verificar instalações:**
+```bash
 node --version
 npm --version
 Instalar Expo CLI:
